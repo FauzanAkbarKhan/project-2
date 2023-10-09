@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membuat List</title>
+  </head>
+  <body>
+    <h1>Membuat List</h1>
+
+    <!-- 
+        Membuat List ===> numbering and bullets : 
+        1. Ordered List ===> menggunakan urutan
+            Contoh :
+                1.. 2.. 3..
+                a.. b.. c..
+                A.. B.. C..
+                a.. b.. c..
+                i.. ii.. iii...
+
+
+            Format : 
+                <ol>
+                    <li>konten 1</li>
+                    <li>konten 2</li>
+                    <li>konten 3</li>
+                </ol>
+        2. Unordered List ===> menggunakan symbol
+            Contoh :
+                symbol lingkaran
+                symbol kotak
+                dll
+
+            Format :
+                <ul>
+                    <li>konten 1</li>
+                    <li>konten 2</li>
+                    <li>konten 3</li>
+                </ul>
+     -->
+
+    <h2>Yang harus dilakukan hari ini:</h2>
+
+    <h3>Dengan Ordered List</h3>
+    <!-- defaultnya akan menggunakan angka -->
+    <ol>
+      <li>Diam Di Rumah</li>
+      <li>Buat tutorial HTML</li>
+      <li>Mengerjakan PR Sekolah</li>
+    </ol>
+
+    <hr />
+
+    <!-- menggunakan angka dibulai bukan dari 1 -->
+    <ol start="11">
+      <li>Diam Di Rumah</li>
+      <li>Buat tutorial HTML</li>
+      <li>Mengerjakan PR Sekolah</li>
+    </ol>
+
+    <hr />
+
+    <!-- menggunakan huruf Kapital-->
+    <ol type="A">
+      <li>Diam Di Rumah</li>
+      <li>Buat tutorial HTML</li>
+      <li>Mengerjakan PR Sekolah</li>
+    </ol>
+
+    <hr />
+
+    <!-- menggunakan huruf kecil -->
+    <ol type="a">
+      <li>Diam Di Rumah</li>
+      <li>Buat tutorial HTML</li>
+      <li>Mengerjakan PR Sekolah</li>
+    </ol>
+
+    <hr />
+
+    <!-- menggunakan angka romawi besar -->
+    <ol type="I">
+      <li>Diam Di Rumah</li>
+      <li>Buat tutorial HTML</li>
+      <li>Mengerjakan PR Sekolah</li>
+    </ol>
+
+    <hr />
+
+    <!-- menggunakan angka romawi kecil -->
+    <ol type="i">
+      <li>Diam Di Rumah</li>
+      <li>Buat tutorial HTML</li>
+      <li>Mengerjakan PR Sekolah</li>
+    </ol>
+
+    <hr />
+
+    <h3>Dengan Unordered List</h3>
+
+    <!-- defaultnya akan menggunakan simbol lingkaran hitam penuh-->
+
+    <ul>
+      <li>Diam Di Rumah</li>
+      <li>Buat tutorial HTML</li>
+      <li>Mengerjakan PR Sekolah</li>
+    </ul>
+
+    <hr />
+
+    <!-- menggunakan simbol lingkaran putih dengan border / garis pinggir hitam dengan bantuan inline CSS-->
+
+    <ul style="list-style-type: circle">
+      <li>Diam Di Rumah</li>
+      <li>Buat tutorial HTML</li>
+      <li>Mengerjakan PR Sekolah</li>
+    </ul>
+
+    <hr />
+
+    <!-- menggunakan simbol kotak / persegi dengan bantuan inline CSS-->
+
+    <ul style="list-style-type: square">
+      <li>Diam Di Rumah</li>
+      <li>Buat tutorial HTML</li>
+      <li>Mengerjakan PR Sekolah</li>
+    </ul>
+
+    <hr />
+
+    <h1>Membuat Nested List / List di dalam List</h1>
+    <h2>Yang harus dilakukan hari ini:</h2>
+
+    <ol>
+      <li>
+        Diam Di Rumah
+
+        <ul>
+          <li>Santai</li>
+          <li>
+            Belajar
+            <ol type="a">
+              <li>Website</li>
+              <li>HTML</li>
+            </ol>
+          </li>
+          <li>Cuci Tangan</li>
+        </ul>
+      </li>
+      <li>Buat tutorial HTML</li>
+      <li>Mengerjakan PR Sekolah</li>
+    </ol>
+  </body>
+</html>

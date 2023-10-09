@@ -1,0 +1,14 @@
+https://github.com/FauzanAkbarKhan/project-2.git
+
+git init
+
+git remote add origin https://...git
+
+git add .
+
+git commit -m "commit message"
+
+// ketika pertama kali push ke repo
+git push -u origin main
+or
+git push -u origin master

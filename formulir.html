@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membuat Formulir</title>
+  </head>
+  <body>
+    <h1>Membuat Formulir Pendaftaran Prakerja 2023</h1>
+    <!-- 
+        tag input memiliki type sebagai berikut
+        - text ===> menampung data alphabet, symbol dan numeric
+        - number ===> menampung data numerik / angka saja
+        - date ===> date picker ===> memilih tanggal bulan tahun
+        - file ===> menambahkan lampiran / file
+        - submit ===> mentriger submit formulir ===> mengirimkan data dari client / browser ke backend server
+        - reset ===> menghapus semua inputan yang sudah terisi
+        - email ===> menampung data email yang valid
+        - radio ===> wajib memilih 1 data
+        - checkbox ===> boleh memilih lebih dari 1 data
+
+        tips :
+        penamaan name / id / class / for :
+        - tidak boleh menggunakan spasi
+        - pakai - atau _ atau camelCase
+     -->
+
+    <form action="">
+      <label for="nama">Nama : </label>
+      <input type="text" name="nama" id="nama" placeholder="Nama Lengkap" />
+      <br />
+
+      <label for="tempat_lahir">Tempat Lahir : </label>
+      <input
+        type="text"
+        name="tempat_lahir"
+        id="tempat_lahir"
+        placeholder="Tempat Lahir"
+      />
+      <br />
+
+      <label for="tanggal_lahir">Tanggal Lahir : </label>
+      <input type="date" name="tanggal_lahir" id="tanggal_lahir" /> <br />
+
+      <label for="jenis_kelamin">Jenis Kelamin : </label>
+      <input
+        type="radio"
+        name="jenis_kelamin"
+        id="jenis_kelamin"
+        value="Laki-laki"
+      />
+      Laki-laki
+      <input
+        type="radio"
+        name="jenis_kelamin"
+        id="jenis_kelamin"
+        value="Perempuan"
+      />
+      Perempuan
+      <br />
+
+      <label for="jenis_pelatihan">Jenis Pelatihan : </label>
+      <br />
+      <input
+        type="checkbox"
+        name="jenis_pelatihan"
+        id="jenis_pelatihan"
+        value="Pengenalan HTML"
+      />
+      Pengenalan HTML
+      <br /><input
+        type="checkbox"
+        name="jenis_pelatihan"
+        id="jenis_pelatihan"
+        value="Pengenalan CSS"
+      />
+      Pengenalan CSS
+      <br /><input
+        type="checkbox"
+        name="jenis_pelatihan"
+        id="jenis_pelatihan"
+        value="Pengenalan JavaScript"
+      />
+      Pengenalan JavaScript
+      <br /><input
+        type="checkbox"
+        name="jenis_pelatihan"
+        id="jenis_pelatihan"
+        value="Pengenalan MySQL"
+      />
+      Pengenalan MySQL
+      <br />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email" /> <br />
+
+      <label for="jumlah_anggota_keluarga">Jumlah Anggota Kelurga</label>
+      <input
+        type="number"
+        min="1"
+        max="10"
+        name="jumlah_anggota_keluarga"
+        id="jumlah_anggota_keluarga"
+        placeholder="Jumlah Anggota Kelurga"
+      />
+      <br />
+
+      <label for="kewarganegaraan">Kewarganegaraan</label>
+      <select name="kewarganegaraan" id="kewarganegaraan">
+        <option value="Indonesia">Indonesia</option>
+        <option value="Singapura">Singapura</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Thailand">Thailand</option>
+        <option value="Vietnam">Vietnam</option>
+        <option value="Vilipina">Indonesia</option>
+      </select>
+      <br />
+
+      <label for="alamat" style="vertical-align: top">Alamat</label>
+      <textarea name="Alamat" id="alamat" cols="30" rows="10"></textarea>
+      <br />
+
+      <label for="username">Username</label>
+      <input type="username" id="username" name="username" />
+      <br />
+      <label for="password">Password</label>
+      <input type="password" id="username" name="username" />
+      <br />
+      <br />
+      <input type="submit" value="Register" />
+      <input type="reset" value="Clear" />
+    </form>
+  </body>
+</html>
